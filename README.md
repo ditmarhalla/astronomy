@@ -13,4 +13,8 @@ The next integreted function (line 43) gets us the surface of each sunspot and t
 
 From the pictures below you can see that from picture 1 that is the input we get the output with he detection.
 
+![Screenshot](sunspot1.jpg)
+
+![Screenshot](Finish.png)
+
 This code is not perfect and has some problems but its a nice first implementation for a weekend project for a newbie python programer.
