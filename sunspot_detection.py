@@ -2,6 +2,7 @@ import cv2 # opencv library
 import numpy as np
 import matplotlib.pyplot as plt
 
+"""Make the pwd implementation"""
 path = r'C:\\Users\\Ditmar\\Desktop\\sunspot1.jpg'
 image = cv2.imread(path,0)
 
@@ -34,14 +35,11 @@ for i,cntr in enumerate(contours):
     #print("x = ",x,"y = ",y,"w = ",w,"h = ",h)
     if ((x-249)**2 + (y-249)**2)<= 238**2:
         valid_cntrs.append(cntr)
-        
-# count of discovered contours        
+"""implement image size detection for the contur LINE 36"""
+
+# count the number of dicovered sunspots
 print("The number of sunspots is: ",len(valid_cntrs))
 
-# cv2.drawContours(image_1, valid_cntrs, -1, (0,0,200), 1)
-# plt.imshow(image_1)
-# plt.show()
-          
 contour_sizes = [(cv2.contourArea(contour), contour) for contour in valid_cntrs]
 
 for i in range(len(valid_cntrs)):
