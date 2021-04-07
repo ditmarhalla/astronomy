@@ -1,9 +1,13 @@
+import os
 import cv2 # opencv library
 import numpy as np
 import matplotlib.pyplot as plt
 
 """Make the pwd implementation"""
-path = r'C:\\Users\\Ditmar\\Desktop\\sunspot1.jpg'
+cwd = os.getcwd()
+file = "\sunspot1.jpg"
+path = cwd + file
+#path = r'C://Users//Ditmar//python_projects//sunspot_detection//sunspot1.jpg'
 image = cv2.imread(path,0)
 
 image_1 = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
