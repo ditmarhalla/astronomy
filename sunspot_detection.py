@@ -7,7 +7,6 @@ import matplotlib.pyplot as plt
 cwd = os.getcwd()
 file = "\sunspot1.jpg"
 path = cwd + file
-#path = r'C://Users//Ditmar//python_projects//sunspot_detection//sunspot1.jpg'
 image = cv2.imread(path,0)
 
 image_1 = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
@@ -22,8 +21,8 @@ image_1 = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
 
 # perform image thresholding
 ret, thresh = cv2.threshold(image, 90, 255, cv2.THRESH_BINARY)
-plt.imshow(thresh, cmap = 'gray')
-plt.show()
+#plt.imshow(thresh, cmap = 'gray')
+#plt.show()
 
 
 # circle = cv2.circle(thresh, (249,249),(238),(0, 255, 0),1)
